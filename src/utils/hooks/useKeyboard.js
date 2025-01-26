@@ -6,6 +6,9 @@ export default () => {
   const [keyboardHeight, setKeyboardHeight] = useState(0)
 
   const handleKeyboardDidShow = e => {
+    // const isShow = e.endCoordinates.height > 115
+    // setShown(isShow)
+    // setKeyboardHeight(isShow ? e.endCoordinates.height : 0)
     setShown(true)
     setKeyboardHeight(e.endCoordinates.height)
   }
